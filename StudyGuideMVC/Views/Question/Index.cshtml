@@ -1,0 +1,33 @@
+﻿@model ApplicationCore.Models.QuestionPageViewModel
+
+@{ ViewData["Title"] = "Home Page"; }
+
+<div class="text-center">
+    <h1 class="display-4">Questions</h1>
+    <ul class="list-group list-group-flush">
+        @foreach (var question in Model.header.questionDropDown)
+        {
+<li class="list-group-item">
+
+    <i style="font-size: x-large;">@question.Questions</i>
+    <br />
+    <i>Name: @question.Name</i>
+    <br />
+    <I>Date: @question.AddedOn}}</I>
+    <br />
+</li>
+}
+    </ul>
+
+    @*<h1 class="display-4">Answers</h1>
+            <ul class="list-group list-group-flush">
+                @foreach (var client in Model.header.answerDropDown)
+                {
+        <li class="list-group-item">
+
+            <a href="https://localhost:44380/interaction" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">@client.Answers</a>
+        </li>}
+            </ul>*@
+
+
+</div>
